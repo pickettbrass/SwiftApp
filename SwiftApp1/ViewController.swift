@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var aLabel: UILabel!
     
     @IBOutlet weak var text1: UITextField!
@@ -18,22 +18,29 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTap(_ sender: Any) {
         
+        var addition:Bool = true
         
-        aLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
+        if addition {
+            aLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
+        }
+        else
+        {
+            aLabel.text = "Answer: \(Double(text1.text!)! - Double (text2.text!)!)"
+        }
         
         
-    
+        
     }
     
     @IBAction func changePush(_ sender: Any) {
         
-          aLabel.text = "Back to the start"
-       
+        aLabel.text = "Back to the start"
+        
         // this is a comment for keeping track of stuff
         /* another comment block */
         
         print("other button tapped")
-
+        
     }
     
     override func viewDidLoad() {
@@ -41,16 +48,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-       
+        
         
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
