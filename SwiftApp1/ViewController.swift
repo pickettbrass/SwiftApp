@@ -12,16 +12,17 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var aLabel: UILabel!
     
-    var tapCount = 0
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
     
     @IBAction func buttonTap(_ sender: Any) {
         
-        tapCount += 1
-        print(tapCount)
         
-        if tapCount > 20 {
-            aLabel.text="You pressed button 20 times!"
-        }
+        aLabel.text = "Answer: \(Double(text1.text!)! + Double (text2.text!)!)"
+        
+        
+    
     }
     
     @IBAction func changePush(_ sender: Any) {

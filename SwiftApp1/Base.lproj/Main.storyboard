@@ -41,19 +41,43 @@
                                     <action selector="changePush:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdM-FH-2cM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QR8-kN-rPS">
+                                <rect key="frame" x="157" y="307" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xf9-Ld-VmI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BDN-g0-c0E">
+                                <rect key="frame" x="157" y="266" width="100" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sFu-K2-1vo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YF2-Qg-lVX" firstAttribute="top" secondItem="TSC-Q3-Lcq" secondAttribute="bottom" constant="56" id="2wp-xp-rtl"/>
+                            <constraint firstItem="BDN-g0-c0E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72l-GN-xBc"/>
+                            <constraint firstItem="QR8-kN-rPS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ANB-f7-bUL"/>
                             <constraint firstItem="YF2-Qg-lVX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DV7-qm-gK8"/>
                             <constraint firstItem="8fO-Gd-YxO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="Ejv-v6-0vr"/>
                             <constraint firstItem="TSC-Q3-Lcq" firstAttribute="top" secondItem="8fO-Gd-YxO" secondAttribute="bottom" constant="9" id="FCV-dn-XB0"/>
                             <constraint firstItem="8fO-Gd-YxO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VfC-SW-AFV"/>
                             <constraint firstItem="TSC-Q3-Lcq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cT2-QB-5Go"/>
+                            <constraint firstItem="QR8-kN-rPS" firstAttribute="top" secondItem="BDN-g0-c0E" secondAttribute="bottom" constant="20" id="kRm-nZ-dKg"/>
+                            <constraint firstItem="BDN-g0-c0E" firstAttribute="top" secondItem="YF2-Qg-lVX" secondAttribute="bottom" constant="20" id="zPF-AX-JDY"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="aLabel" destination="8fO-Gd-YxO" id="WAX-D8-Fyy"/>
+                        <outlet property="text1" destination="BDN-g0-c0E" id="iIy-sP-BZd"/>
+                        <outlet property="text2" destination="QR8-kN-rPS" id="L9H-Ba-fXR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
